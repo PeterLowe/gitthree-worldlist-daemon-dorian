@@ -29,7 +29,7 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 1;
 	}
-	std::cout << "Pick a letter from A to D or Y to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to D or V to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -125,6 +125,29 @@ int main()
 		case RestOfWorld:
 			printf("Dominica, Dominican Republic\n");
 			break;
+		}
+	}
+	else if (letter == 'v' || letter == 'V') // Written by Daemon Medeiros
+	{
+		if (region == 1)
+		{
+			std::cout << "Venezuala" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "Vatican City State (Holy See)" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "There are no Vs in Africa" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Vietnam" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "Vanuatu, Virgin Islands (British), Virgin Islands (U.S.)" << std::endl;
 		}
 	}
 	else if (letter == 'w' || letter == 'W') // Written by Daemon Medeiros
