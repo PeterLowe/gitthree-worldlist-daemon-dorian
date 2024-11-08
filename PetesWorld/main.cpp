@@ -10,6 +10,13 @@
 
 #include <iostream>
 
+enum ERegion { // added for readability - Dorian
+	Americas = 1,
+	Europe,
+	Africa,
+	Asia,
+	RestOfWorld
+};
 
 int main()
 {
@@ -20,7 +27,7 @@ int main()
 	if (region < 1 || region > 5)
 	{
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
-		return 0;
+		return 1;
 	}
 	std::cout << "Pick a letter from A to A or Z to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
@@ -29,7 +36,7 @@ int main()
 		if (letter < 'a' || letter > 'z') // not a lower case letter
 		{
 			std::cout << "You need to select a letter from A to Z" << std::endl;
-			return 0; 
+			return 1; 
 		}		
 	}
 	if (letter == 'a' || letter == 'A') // written by Pete
@@ -54,7 +61,28 @@ int main()
 		{
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
-	}	
+	}
+	else if (letter == 'b' || letter == 'B') // written by Dorian
+	{
+		switch (region)
+		{
+			case Americas:
+				printf("Bermuda, Belize, Brazil, Bolivia\n");
+				break;
+			case Europe:
+				printf("Belgium, Belarus, Bosnia and Herzegovina, Bulgaria\n");
+				break;
+			case Africa:
+				printf("Benin, Botswana, Burkina Faso, Burundi\n");
+				break;
+			case Asia:
+				printf("Bangladesh, Bhutan, Brunei Darussalam\n");
+				break;
+			case RestOfWorld:
+				printf("Bahamas, Bahrain, Barbados\n");
+				break;
+		}
+	}
 	else if (letter == 'z' || letter == 'Z') // written by Pete
 	{
 		if (region == 1)
@@ -82,5 +110,5 @@ int main()
 	
 	
 	
-	return 1;
+	return 0;
 }
