@@ -1,7 +1,7 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// add your name here
+// Dorian Pazur
 //  or here
 // estimated time 120 minutes
 // actual time ??
