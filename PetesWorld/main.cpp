@@ -55,6 +55,31 @@ int main()
 			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
 		}
 	}	
+
+	else if (letter == 'y' || letter == 'Y') // Written by Daemon Medeiros
+	{
+		if (region == 1)
+		{
+			std::cout << "There are no Ys in the Americas" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "There are no Ys in Europe" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "There are no Ys in Africa" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "There are no Ys in Asia" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "Yemen, Arabian Peninsula" << std::endl;
+		}
+	}
+
 	else if (letter == 'z' || letter == 'Z') // written by Pete
 	{
 		if (region == 1)
