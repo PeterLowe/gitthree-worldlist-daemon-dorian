@@ -30,7 +30,7 @@ int main()
 		return 1;
 	}
 
-	std::cout << "Pick a letter from A to B or V to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to B or U to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -84,7 +84,6 @@ int main()
 				break;
 		}
 	}
-<<<<<<< HEAD
 	else if (letter == 'c' || letter == 'C') // written by Dorian
 	{
 		switch (region)
@@ -108,7 +107,30 @@ int main()
 			break;
 		}
 	}
-=======
+
+	else if (letter == 'u' || letter == 'U') // Written by Daemon Medeiros
+	{
+		if (region == 1)
+		{
+			std::cout << "United States, Uruguay" << std::endl; 
+		}
+		if (region == 2)
+		{
+			std::cout << "United Kingdom, Ukraine" << std::endl; 
+		}
+		if (region == 3)
+		{
+			std::cout << "Uganda" << std::endl; 
+		}
+		if (region == 4)
+		{
+			std::cout << "Uzbekistan" << std::endl; 
+		}
+		if (region == 5)
+		{
+			std::cout << "United Arab Emirates" << std::endl;
+		}
+	}
 
 	else if (letter == 'v' || letter == 'V') // Written by Daemon Medeiros
 	{
@@ -133,8 +155,6 @@ int main()
 			std::cout << "Vanuatu, Virgin Islands (British), Virgin Islands (U.S.)" << std::endl;
 		}
 	}
-
->>>>>>> LetterV
 	else if (letter == 'w' || letter == 'W') // Written by Daemon Medeiros
 	{
 		if (region == 1)
