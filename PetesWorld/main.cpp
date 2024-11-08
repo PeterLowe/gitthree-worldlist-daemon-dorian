@@ -4,7 +4,7 @@
 // Daemon Medeiros
 // Dorian Pazur
 // estimated time 120 minutes
-// actual time ??
+// actual time 60 minutes
 // version 1.0
 
 
@@ -29,8 +29,12 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 1;
 	}
+<<<<<<< HEAD
 	std::cout << "Pick a letter from A to D or T to Z" << std::endl; // change this line each iteration
 
+=======
+	std::cout << "Pick a letter from A to E or U to Z" << std::endl; // change this line each iteration
+>>>>>>> b73989b596144b5f99fcd5ebeddbc43d7d36aa2d
 	std::cin >> letter;
 
 	if (letter < 'A' || letter > 'Z') // not a capital letter
@@ -89,46 +93,67 @@ int main()
 	{
 		switch (region)
 		{
-		case Americas:
-			printf("Canada, Colombia, Costa Rica, Chile\n");
-			break;
-		case Europe:
-			printf("Croatia, Czech Republic\n");
-			break;
-		case Africa:
-			printf(	"Cameroon, Cape Verde, Central African Republic, Chad, Comoros, \n"
-					"Democratic Republic of the Congo (Kinshasa), Republic of Congo (Brazzaville), \n"
-					"Cote D'ivoire (Ivory Coast)\n" );
-			break;
-		case Asia:
-			printf("Cambodia, China, Christmas Island, Cyprus\n");
-			break;
-		case RestOfWorld:
-			printf("Cayman Islands, Cocos Islands, Cook Islands, Cuba\n");
-			break;
+			case Americas:
+				printf("Canada, Colombia, Costa Rica, Chile\n");
+				break;
+			case Europe:
+				printf("Croatia, Czech Republic\n");
+				break;
+			case Africa:
+				printf(	"Cameroon, Cape Verde, Central African Republic, Chad, Comoros, \n"
+						"Democratic Republic of the Congo (Kinshasa), Republic of Congo (Brazzaville), \n"
+						"Cote D'ivoire (Ivory Coast)\n" );
+				break;
+			case Asia:
+				printf("Cambodia, China, Christmas Island, Cyprus\n");
+				break;
+			case RestOfWorld:
+				printf("Cayman Islands, Cocos Islands, Cook Islands, Cuba\n");
+				break;
 		}
 	}
 	else if (letter == 'd' || letter == 'D') // written by Dorian
 	{
 		switch (region)
 		{
-		case Americas:
-			printf("There are no Ds in the Americas\n");
-			break;
-		case Europe:
-			printf("Denmark\n");
-			break;
-		case Africa:
-			printf("Djibouti\n");
-			break;
-		case Asia:
-			printf("There are no Ds in Asia\n");
-			break;
-		case RestOfWorld:
-			printf("Dominica, Dominican Republic\n");
-			break;
+			case Americas:
+				printf("There are no Ds in the Americas\n");
+				break;
+			case Europe:
+				printf("Denmark\n");
+				break;
+			case Africa:
+				printf("Djibouti\n");
+				break;
+			case Asia:
+				printf("There are no Ds in Asia\n");
+				break;
+			case RestOfWorld:
+				printf("Dominica, Dominican Republic\n");
+				break;
 		}
 	}
+	else if (letter == 'e' || letter == 'E') // written by Dorian
+	{
+		switch (region) {
+			case Americas:
+				printf("ECUADOOR, El Salvador\n");
+				break;
+			case Europe:
+				printf("Estonia\n");
+				break;
+			case Africa:
+				printf("Egypt, Equatorial Guinea, Eritrea, Ethiopia\n");
+				break;
+			case Asia:
+				printf("East Timor\n");
+				break;
+			case RestOfWorld:
+				printf("There are no Es in the rest of the world\n");
+				break;
+		}
+	}
+<<<<<<< HEAD
 
 	else if (letter == 't' || letter == 'T') // Written by Daemon Medeiros
 	{
@@ -154,30 +179,35 @@ int main()
 		}
 	}
 
+=======
+>>>>>>> b73989b596144b5f99fcd5ebeddbc43d7d36aa2d
 	else if (letter == 'u' || letter == 'U') // Written by Daemon Medeiros
 	{
 		if (region == 1)
 		{
-			std::cout << "United States, Uruguay" << std::endl; 
+			std::cout << "United States, Uruguay" << std::endl;
 		}
 		if (region == 2)
 		{
-			std::cout << "United Kingdom, Ukraine" << std::endl; 
+			std::cout << "United Kingdom, Ukraine" << std::endl;
 		}
 		if (region == 3)
 		{
-			std::cout << "Uganda" << std::endl; 
+			std::cout << "Uganda" << std::endl;
 		}
 		if (region == 4)
 		{
-			std::cout << "Uzbekistan" << std::endl; 
+			std::cout << "Uzbekistan" << std::endl;
 		}
 		if (region == 5)
 		{
 			std::cout << "United Arab Emirates" << std::endl;
 		}
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> b73989b596144b5f99fcd5ebeddbc43d7d36aa2d
 	else if (letter == 'v' || letter == 'V') // Written by Daemon Medeiros
 	{
 		if (region == 1)
