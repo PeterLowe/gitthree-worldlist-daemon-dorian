@@ -29,7 +29,7 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 1;
 	}
-	std::cout << "Pick a letter from A to E or V to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from A to E or U to Z" << std::endl; // change this line each iteration
 	std::cin >> letter;
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
@@ -145,6 +145,29 @@ int main()
 			case RestOfWorld:
 				printf("There are no Es in the rest of the world\n");
 				break;
+		}
+	}
+	else if (letter == 'u' || letter == 'U') // Written by Daemon Medeiros
+	{
+		if (region == 1)
+		{
+			std::cout << "United States, Uruguay" << std::endl;
+		}
+		if (region == 2)
+		{
+			std::cout << "United Kingdom, Ukraine" << std::endl;
+		}
+		if (region == 3)
+		{
+			std::cout << "Uganda" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Uzbekistan" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "United Arab Emirates" << std::endl;
 		}
 	}
 	else if (letter == 'v' || letter == 'V') // Written by Daemon Medeiros
