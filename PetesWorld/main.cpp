@@ -29,13 +29,10 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 1;
 	}
-<<<<<<< HEAD
-	std::cout << "Pick a letter from A to D or V to Z" << std::endl; // change this line each iteration
-=======
+	std::cout << "Pick a letter from A to D or T to Z" << std::endl; // change this line each iteration
 
-	std::cout << "Pick a letter from A to B or U to Z" << std::endl; // change this line each iteration
->>>>>>> LetterU
 	std::cin >> letter;
+
 	if (letter < 'A' || letter > 'Z') // not a capital letter
 	{ 
 		if (letter < 'a' || letter > 'z') // not a lower case letter
@@ -111,7 +108,6 @@ int main()
 			break;
 		}
 	}
-<<<<<<< HEAD
 	else if (letter == 'd' || letter == 'D') // written by Dorian
 	{
 		switch (region)
@@ -133,7 +129,30 @@ int main()
 			break;
 		}
 	}
-=======
+
+	else if (letter == 't' || letter == 'T') // Written by Daemon Medeiros
+	{
+		if (region == 1)
+		{
+			std::cout << "Trinidad, Tobago" << std::endl; 
+		}
+		if (region == 2)
+		{
+			std::cout << "Turkey" << std::endl; 
+		}
+		if (region == 3)
+		{
+			std::cout << "Togo, Tunisia" << std::endl;
+		}
+		if (region == 4)
+		{
+			std::cout << "Thailand, Tibet, Timore-Leste (East Timor), Turkey, Turkmenistan" << std::endl;
+		}
+		if (region == 5)
+		{
+			std::cout << "Tokelau, Tonga, Tuvalu" << std::endl;
+		}
+	}
 
 	else if (letter == 'u' || letter == 'U') // Written by Daemon Medeiros
 	{
@@ -159,7 +178,6 @@ int main()
 		}
 	}
 
->>>>>>> LetterU
 	else if (letter == 'v' || letter == 'V') // Written by Daemon Medeiros
 	{
 		if (region == 1)
